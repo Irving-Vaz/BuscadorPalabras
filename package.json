@@ -2,7 +2,7 @@
   "name": "plantilla",
   "version": "1.0.0",
   "description": "Plantilla basado en ES",
-  "homepage": "https://github.com/Irving-Vaz/Video-Game",
+  "homepage": "https://github.com/Irving-Vaz/BuscadorPalabras",
   "license": "MIT",
   "author": "Irving",
   "main": "index.js",
