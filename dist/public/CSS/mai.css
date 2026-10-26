@@ -1,0 +1,184 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .main-header h1 {
+            font-size: 1.8rem;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .main-header h1 i {
+            color: #3b82f6;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            color: #1e293b;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .card-title i {
+            color: #3b82f6;
+        }
+
+        /* Fila para poner el texto principal y la palabra a buscar lado a lado */
+        .row-inputs {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col-main {
+            flex: 2; /* Ocupa más espacio por ser el texto principal */
+        }
+
+        .col-side {
+            flex: 1; /* Ocupa menos espacio para el buscador */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #334155;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Botones centrados, en la misma línea y separados */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        #btnBuscar {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        #btnBuscar:hover {
+            background-color: #2563eb;
+        }
+
+        #btnLimpiar {
+            background-color: #e2e8f0;
+            color: #475569;
+        }
+
+        #btnLimpiar:hover {
+            background-color: #cbd5e1;
+        }
+
+        /* Resultados y Contador */
+        .result-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        #contador {
+            background-color: #eff6ff;
+            color: #3b82f6;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        #textoResaltado {
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            min-height: 60px;
+            border-radius: 8px;
+            background-color: #f8fafc;
+            white-space: pre-wrap;
+            color: #334155;
+            font-size: 0.95rem;
+        }
+
+        mark {
+            background-color: #fef08a;
+            color: #713f12;
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
